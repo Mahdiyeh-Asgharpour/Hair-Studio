@@ -10,6 +10,18 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="style.css">
+<!-- Always get the latest version -->
+<!-- Not recommended for production sites! -->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+<!-- Get minor updates and patch fixes within a major version -->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+
+<!-- Get patch fixes within a minor version -->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+<!-- Get a specific version -->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
 <body>
     <section id="banner">
@@ -28,11 +40,11 @@
         <nav>
             <ul>
                 
-                <li><a href="#">Home</a> </li>
-                <li><a href="#">Features</a> </li>
-                <li><a href="#">Services</a> </li>
-                <li><a href="#">Testimonials</a> </li>
-                <li><a href="#">Meet Us</a> </li>
+                <li><a href="#banner">Home</a> </li>
+                <li><a href="#features">Features</a> </li>
+                <li><a href="#service">Services</a> </li>
+                <li><a href="#testimonial">Testimonials</a> </li>
+                <li><a href="#footer">Meet Us</a> </li>
                
             </ul>
         </nav>
@@ -86,6 +98,61 @@
             </div>
         </div>    
     </section>
+    <section id="testimonial">
+        <div class="title-text">
+            <p>Testimonial</p>
+            <h1>Our clients say</h1>
+        </div>
+        <div class="testimonial-row">
+            <div class="testimonial-col">
+                <p>U r the best.</p>
+                <div class="user">
+                    <img src="pexels-photo-7870027.jpeg">
+                    <div class="user-info">
+                        <h4>Max</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <p>The best haircut studio in world!</p>
+                <div class="user">
+                    <img src="pexels-photo-8067886.webp">
+                    <div class="user-info">
+                        <h4>Alice</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <p>100/100</p>
+                <div class="user">
+                    <img src="pexels-photo-532220.webp">
+                    <div class="user-info">
+                        <h4>Richard</h4>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <section id="footer">
+        <div class="title-text">
+            <p>Contact us</p>
+            <h1>Visit shop today</h1>
+        </div>
+        <div class="footer-ro">
+            <div class="footer-left">
+                <h1>Opening hours</h1>
+                <p>Monday to friday-9am to 6am</p>
+            </div>
+            <div class="footer-right">
+                <h1>Get in touch</h1>
+                <p>#36,Via roma,Milan</p>
+                <p>+3912345678901234</p>
+            </div>
+        </div>
+
+    </section>
     <script>
         var menubtn=document.getElementById("menubtn")
         var menu=document.getElementById("menu")
@@ -100,5 +167,10 @@
                 sidenav.style.right="-200px"
                 menu.src="icon-menu-512.webp";}
         }
+        // All animations will take exactly 500ms
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
     </script>
 </body>
