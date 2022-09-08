@@ -243,3 +243,88 @@ hr{
     font-style: italic;
     font-family: 'Indie Flower', cursive;
 }
+#testimonial{
+    width: 100%;
+    padding: 70px 0;
+}
+.testimonial-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+.testimonial-col{
+    flex-basis: 20%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 8px 8px 3px #f4520c;
+    background-color: rgba(0, 0, 0, 0.93);
+    cursor: pointer;
+    transition: 00.5s;
+}
+.testimonial-col p{
+    font-size: x-large;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    color: #f4520c;
+}
+.user{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+
+}
+.user img{
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 3px;
+
+}
+.user-info{
+    font-family: 'Dancing Script', cursive;
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+    color:rgb(221, 255, 2);
+
+}
+.testimonial-col:hover{
+    transform: translateY(-7px);
+}
+#footer{
+    padding: 100px 20px 0;
+    background:rgba(221, 255, 2, 0.2);
+
+}
+.footer-ro{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left , .footer-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.footer-right{
+    text-align: right;
+}
+.footer-ro h1{
+    margin: 10px 0;
+    font-family: 'Dancing Script', cursive;
+    font-size: xx-large;
+    color: #f4520c;
+}
+.footer-ro p{
+    line-height: 35px;
+    font-family: 'Indie Flower', cursive;
+    font-size: large;
+    font-weight: bold;
+    color: #2a0d01;
+}
